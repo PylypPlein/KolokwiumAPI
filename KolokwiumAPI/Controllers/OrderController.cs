@@ -1,11 +1,12 @@
 ﻿using KolokwiumAPI.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace KolokwiumAPI.Controllers;
-using Microsoft.AspNetCore.Mvc;
+
 
 [ApiController]
 [Route("/api/")]
-public class OrderController
+public class OrderController : ControllerBase
 {
     private readonly IOrderService _orderService;
 
@@ -14,7 +15,8 @@ public class OrderController
         _orderService = orderService;
     }
 
-    [HttpGet("order")]
+    [HttpGet("orders")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public IActionResult GetOrder(int IdOrder)
     {
         var orders = _orderService.GetOrders(IdOrder);
