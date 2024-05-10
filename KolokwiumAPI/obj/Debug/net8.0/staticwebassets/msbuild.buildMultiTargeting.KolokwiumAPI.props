@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\KolokwiumAPI.props" />
+</Project>

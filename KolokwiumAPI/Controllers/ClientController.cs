@@ -1,12 +1,11 @@
 ﻿using KolokwiumAPI.Dto;
 using KolokwiumAPI.Services;
-using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace KolokwiumAPI.Controllers;
 
 [ApiController]
-[Route("/api/")]
+[Route("/api/client")]
 public class ClientController : ControllerBase
 {
     private readonly IClientService _service;
@@ -15,10 +14,11 @@ public class ClientController : ControllerBase
     {
         _service = service;
     }
-    [HttpDelete("client")]
-    public IActionResult DeleteClient([FromBody] DeleteClientDto deleteClientDto)
+    [HttpDelete("{id}")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    public IActionResult DeleteClient(int id, [FromBody] DeleteClientDto deleteClientDto)
     {
-        var succes = _service.DeleteClient(deleteClientDto);
+        var succes = _service.DeleteClient(id,deleteClientDto);
         return succes ? StatusCode(StatusCodes.Status200OK) : Conflict();
     }
 }
