@@ -1,0 +1,8 @@
+C:\Users\s24675\RiderProjects\KolokwiumAPI\KolokwiumAPI\obj\Debug\net8.0\KolokwiumAPI.csproj.AssemblyReference.cache
+C:\Users\s24675\RiderProjects\KolokwiumAPI\KolokwiumAPI\obj\Debug\net8.0\KolokwiumAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\s24675\RiderProjects\KolokwiumAPI\KolokwiumAPI\obj\Debug\net8.0\KolokwiumAPI.AssemblyInfoInputs.cache
+C:\Users\s24675\RiderProjects\KolokwiumAPI\KolokwiumAPI\obj\Debug\net8.0\KolokwiumAPI.AssemblyInfo.cs
+C:\Users\s24675\RiderProjects\KolokwiumAPI\KolokwiumAPI\obj\Debug\net8.0\KolokwiumAPI.csproj.CoreCompileInputs.cache
+C:\Users\s24675\RiderProjects\KolokwiumAPI\KolokwiumAPI\obj\Debug\net8.0\KolokwiumAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\s24675\RiderProjects\KolokwiumAPI\KolokwiumAPI\obj\Debug\net8.0\KolokwiumAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\s24675\RiderProjects\KolokwiumAPI\KolokwiumAPI\obj\Debug\net8.0\KolokwiumAPI.sourcelink.json
