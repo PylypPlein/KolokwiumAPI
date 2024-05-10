@@ -1,14 +1,16 @@
-﻿using KolokwiumAPI.Models;
+﻿using KolokwiumAPI.Dto;
+using KolokwiumAPI.Models;
 using KolokwiumAPI.Repositories;
+
 
 namespace KolokwiumAPI.Services;
 
 public interface IOrderService
 {
-    public IEnumerable<Order> GetOrders(int IdOrder);
+    public IEnumerable<OrderDto> GetOrders(int IdOrder);
 }
 
-public class OrderService
+public class OrderService : IOrderService
 {
     private readonly IOrderRepository _orderRepository;
 
@@ -17,16 +19,9 @@ public class OrderService
         _orderRepository = orderRepository;
     }
 
-    public IEnumerable<Order> GetOrders(int IdOrder)
+    public IEnumerable<OrderDto> GetOrders(int IdOrder)
     {
-        try
-        {
-            return _orderRepository.GetOrderDetails(IdOrder);
-        }
-        catch (Exception ex)
-        {
-            throw ex;
-        }
-        
+        return _orderRepository.GetOrderDetails(IdOrder);
+
     }
 }

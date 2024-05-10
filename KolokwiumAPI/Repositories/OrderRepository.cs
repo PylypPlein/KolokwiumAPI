@@ -6,7 +6,7 @@ public interface IOrderRepository
 {
     public IEnumerable<OrderDto> GetOrderDetails(int IdOrder);
 }
-public class OrderRepository
+public class OrderRepository : IOrderRepository
 {
     private readonly IConfiguration _configuration;
     public OrderRepository(IConfiguration configuration)
